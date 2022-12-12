@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<form>
+  <h1 style="font-weight: bolder;font-size: large">Calculator</h1>
+  <label >
+    <input id="input1" type="number" name="input1" value=" ">
+  </label>
+  <label>
+    <input id="input2" type="number" name="input2" value=" ">
+  </label>
+  <br>
+  <button id="button1" name="addition" value="Addition" onclick="Addfunction()">Addition(+)</button>
+  <button id="button2" name="subtraction" value="Subtraction" onclick="Subfunction()">Subtraction(-)</button>
+  <button id="button3" name="multiplication" value="Multiplication" onclick="Mulfunction()">Multiplication(X)</button>
+  <button id="button4" name="division" value="Division" onclick="Divfunction()">Division(/)</button>
+  <p id="output"></p>
+</form>
+<script>
+  function Addfunction(){
+    let input1=Number(document.getElementById("input1").value);
+    let input2=Number(document.getElementById("input2").value);
+    let result=input1+input2;
+    let output=document.getElementById("output").innerHTML=+result;
+    document.write(output);
+  }
+  function  Subfunction()
+  {
+    let input3=document.getElementById("input1").value;
+    let input4=document.getElementById("input2").value;
+    let result2 =input3-input4;
+    let output=document.getElementById("output").innerHTML=+result2;
+    document.write(output);
+  }
+  function Mulfunction()
+  {
+    let input5=document.getElementById("input1").value;
+    let input6=document.getElementById("input2").value;
+    let result3 =input5*input6;
+    let output=document.getElementById("output").innerHTML=+result3;
+    document.write(output);
+  }
+  function Divfunction()
+  {
+    let input7=document.getElementById("input1").value;
+    let input8=document.getElementById("input2").value;
+    let result4 =input7/input8;
+    let output=document.getElementById("output").innerHTML=+result4;
+    document.write(output);
+  }
+</script>
+</body>
+</html>
